@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-MediumItalic.eot');
+    src: url('../fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Raleway-MediumItalic.woff') format('woff'),
+        url('../fonts/Raleway-MediumItalic.ttf') format('truetype'),
+        url('../fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.eot');
+    src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Medium.woff2') format('woff2'),
+        url('../fonts/Raleway-Medium.woff') format('woff'),
+        url('../fonts/Raleway-Medium.ttf') format('truetype'),
+        url('../fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-LightItalic.eot');
+    src: url('../fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-LightItalic.woff2') format('woff2'),
+        url('../fonts/Raleway-LightItalic.woff') format('woff'),
+        url('../fonts/Raleway-LightItalic.ttf') format('truetype'),
+        url('../fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Light.eot');
+    src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Light.woff2') format('woff2'),
+        url('../fonts/Raleway-Light.woff') format('woff'),
+        url('../fonts/Raleway-Light.ttf') format('truetype'),
+        url('../fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Italic.eot');
+    src: url('../fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.eot');
+    src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Bold.eot');
+    src: url('../fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('../fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*GENERAL STYLES*/
+
+body {
+	font-size: 16px;
+	position: relative;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	text-align: center;
+}
+
+h3 {
+	font-size: 3rem;
+	color: black;
+}
+
+body {
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/*HEADER*/
+
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 60%;
+}
+
+.cart {
+	width: 60%;
+}
+
+.logo, .cart {
+	margin-bottom: 2%;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav ul a {
+	font-size: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: uppercase;
+	margin: 0px 5px;
+	color: #e2574c;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul a:hover {
+	color: #b64036;
+}
+
+.navbar {
+	border-top: 1px solid #d9d9d7;
+	
+}
+
+/*main content*/
+
+.newcollection {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
+	background-repeat: no-repeat;
+	background-position: center, bottom center, center;
+	background-size: auto, 31%, auto;
+	padding: 28%;
+}
+
+.newcollection h1, .newcollection h2 {
+	text-align: center;
+	vertical-align: middle;
+	
+	color: white;
+}
+
+.newcollection h1{ 
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.newcollection h2 {	
+	line-height: 60px;
+	font-size: 4rem;
+	font-family: 'Playfair Display';
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*HAND CRAFTED STYLES*/
+
+.about {
+	margin-top: 15%;
+}
+
+span {
+	font-family: 'Playfair Display';
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*H3 GENERAL*/
+
+h3 {
+	font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: italic;
+}
+
+.about p {
+	font-size: 1rem;
+	font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+	line-height: 225%;
+	margin: 0 auto;
+	padding-bottom: 15%;
+}
+
+/*CATEGORIES*/
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.flex-2, .flex-3, .flex-4, .flex-5 {
+	box-sizing: border-box;
+	flex: 0 0 49.5%;
+}
+
+.flex-1 {
+	/*background-color: red;*/
+	flex: 0 0 100%;
+	margin-bottom: 1%;
+}
+
+.flex-2 {
+	/*background-color: green;*/
+	margin-bottom: 1%;
+}
+
+.flex-3 {
+	/*background-color: blue;*/
+	margin-bottom: 1%;
+}
+
+.flex-6 {
+
+	flex: 0 0 100%;
+	margin-top: 1%;
+}
+
+.flex-container a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-weight: bold;
+	font-style: normal;
+	display: block;
+	text-align: center;
+	padding: 187px 0;
+	font-size: 3rem;
+	text-shadow: 1px 1px 8px #000000;
+}
+
+.flex-1 a {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../images/mens-category.jpg);
+}
+
+.flex-2 a {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../images/trends-category.jpg);
+}
+
+.flex-3 a {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../images/glasses-category.jpg);
+}
+
+.flex-4 a {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../images/sale-category.jpg);
+}
+
+.flex-5 a {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../images/bags-category.jpg);
+}
+.flex-6 a {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../images/womens-category.jpg);
+}
+
+.flex-1 a, .flex-6 a {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.flex-2 a, .flex-3 a, .flex-4 a, .flex-5 a {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/*Email Section*/
+
+
+
+.emailsection {
+	background-image: url(../images/wave-bkgd.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-bottom: 3rem;
+}
+
+.emailsection p {
+	font-size: 3rem;
+	font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+	line-height: 225%;
+	margin: 0 auto;
+	padding-bottom: 15%;
+}
+
+form, input, button {
+	padding: 14px 40px;
+	font-size: 2.0714285714285716rem;
+	border-radius: 4rem;
+}
+
+
+
+input {
+	
+}
+
+button {
+	
+	background-color: #e2574c;
+}
+
+/*FOOTER*/
+
+.copyright h3, .copyright a {
+	font-size: 4rem;
+	color: white;
+	font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.copyright {
+	
+}
+
+footer {
+	background-color: black;
+}
+
+i {
+	color: white;
+	font-size: 100px;
+	font-size: 20px;
+}
+
+i:after {
+	content: " 2019 Aloha Apparel Co.";
+	font-size: 20px;
+}
+
+.copyright h6, .copyright a {
+	margin-top: 1%;
+	margin-bottom: 0;
+	color: white;
+	font-size: 20px;
+}
+
+/*@media only screen and (min-width: 320px){
+}
+@media only screen and (min-width: 480px){
+	body {
+		background-color: red;
+	}
+}*/
