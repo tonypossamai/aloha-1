@@ -122,20 +122,19 @@ body {
 .banner {
 	display: flex;
 	align-items: center;
-	
+	justify-content: space-between;
 }
 
 .logo {
-	width: 35%;
+	width: 6.25rem;
 }
 
 .cart {
-	width: 35%;
+	width: 2.5rem;
 }
 
 .logo, .cart {
-	margin-bottom: 2%;
-	justify-content: space-between;
+	margin: 0.4375rem;
 }
 
 nav li {
@@ -162,7 +161,7 @@ nav ul a:hover {
 }
 
 .navbar {
-	border-top: 1px solid #d9d9d7;
+	border-top: 0.0625rem solid #d9d9d7;
 	
 }
 
@@ -223,13 +222,17 @@ h3 {
 }
 
 .about p {
-	font-size: 1rem;
+	font-size: 0.875rem;
 	font-family: 'Raleway';
     font-weight: 500;
     font-style: normal;
-	line-height: 225%;
+	line-height: 1.875rem;
 	margin: 0 auto;
 	padding-bottom: 15%;
+}
+
+.about h3 {
+	margin-top: 1.875rem;
 }
 
 /*CATEGORIES*/
@@ -321,13 +324,15 @@ h3 {
 
 /*Email Section*/
 
-
+.emailsection h3 {
+	padding-top: 1.25rem;
+}
 
 .emailsection {
 	background-image: url(../images/wave-bkgd.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	padding-bottom: 3rem;
 }
 
@@ -336,9 +341,13 @@ h3 {
 	font-family: 'Raleway';
     font-weight: 500;
     font-style: normal;
-	line-height: 225%;
+	line-height: 1.875rem;
 	margin: 0 auto;
 	padding-bottom: 15%;
+}
+
+.emailsection h3, .emailsection p {
+	color: white;
 }
 
 /*form, input, button {
@@ -360,8 +369,12 @@ button {
 
 /*FOOTER*/
 
+.copyright h3 {
+	margin: 0 auto;
+}
+
 .copyright h3, .copyright a {
-	font-size: 4rem;
+	font-size: 0.6875rem;
 	color: white;
 	font-family: 'Playfair Display';
     font-weight: normal;
@@ -369,29 +382,50 @@ button {
 }
 
 .copyright {
-	
+	text-align: center;	
+	padding: 3.4375rem;
+}
+
+.copyright a {
+	text-decoration: underline;
 }
 
 footer {
-	background-color: black;
+	background-color: #242424;
 }
 
 i {
 	color: white;
-	font-size: 100px;
-	font-size: 20px;
-}
-
-i:after {
-	content: " 2019 Aloha Apparel Co.";
-	font-size: 20px;
+	font-size: 0.6875rem;
 }
 
 .copyright h6, .copyright a {
 	margin-top: 1%;
 	margin-bottom: 0;
 	color: white;
-	font-size: 20px;
+	font-size: 0.6875rem;
+}
+
+h6 {
+	color: rgba(150,150,150,0.5);
+	font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+.vancouver {
+	padding-top: 1rem;
+}
+
+.copyright li {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.copyright ul {
+	padding: 0;
+	margin-top: 1rem;
 }
 
 @media only screen and (min-width: 320px){
