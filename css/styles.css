@@ -139,6 +139,7 @@ body {
 
 nav li {
 	display: inline-block;
+	padding: 3px 0;
 }
 
 nav ul a {
@@ -147,6 +148,9 @@ nav ul a {
 	margin-right: auto;
 	text-transform: uppercase;
 	color: #e2574c;
+	font-family: 'Raleway';
+    font-weight: bold;
+    font-style: normal;
 }
 
 nav ul {
@@ -168,24 +172,23 @@ nav ul a:hover {
 /*main content*/
 
 .newcollection {
-	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
 	background-repeat: no-repeat;
 	background-position: center, bottom center, center;
-	background-size: cover, 27%, cover;
-	padding: 25%;
+	background-size: cover, 37%, cover;
+	padding: 7.125rem;
 	max-width: 100%;
-    height: auto;
+	display: flex;
+    justify-content: center;
 }
 
 .newcollection h1, .newcollection h2 {
-	text-align: center;
-	vertical-align: middle;
-	
+	padding: 0 50px;
 	color: white;
 }
 
 .newcollection h1{ 
-	font-size: 0.625rem;
+	font-size: 0.9375rem;
 	text-transform: uppercase;
 	font-family: 'Raleway';
     font-weight: 500;
@@ -194,7 +197,7 @@ nav ul a:hover {
 
 .newcollection h2 {	
 	line-height: 1.25rem;
-	font-size: 1.3125rem;
+	font-size: 1.75rem;
 	font-family: 'Playfair Display';
     font-weight: normal;
     font-style: normal;
@@ -232,7 +235,8 @@ h3 {
 }
 
 .about h3 {
-	margin-top: 1.875rem;
+	margin-top: 2.8125rem;
+	margin-bottom: 0.9375rem
 }
 
 /*CATEGORIES*/
@@ -282,8 +286,8 @@ h3 {
 	font-style: normal;
 	display: block;
 	text-align: center;
-	padding: 60px 0;
-	font-size: 1rem;
+	padding: 4.8125rem 0;
+	font-size: 1.25rem;
 	text-shadow: 1px 1px 8px #000000;
 }
 
@@ -371,6 +375,10 @@ button {
 
 .copyright h3 {
 	margin: 0 auto;
+}
+
+.copyright h3:nth-child(2)) {
+	margin-top: 10px;
 }
 
 .copyright h3, .copyright a {
