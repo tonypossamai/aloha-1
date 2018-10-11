@@ -96,7 +96,7 @@
 
 /*GENERAL STYLES*/
 
-body {
+html {
 	font-size: 16px;
 }
 
@@ -119,21 +119,20 @@ body {
 
 /*HEADER*/
 
-.banner {
+.topsection {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 }
 
-.logo {
+.banner img {
 	width: 6.25rem;
 }
 
-.cart {
+.cartimg img {
 	width: 2.5rem;
 }
 
-.logo, .cart {
+.cartimg img, .banner img {
 	margin: 0.4375rem;
 }
 
@@ -144,8 +143,6 @@ nav li {
 
 nav ul a {
 	font-size: 0.6875rem;
-	margin-left: auto;
-	margin-right: auto;
 	text-transform: uppercase;
 	color: #e2574c;
 	font-family: 'Raleway';
@@ -201,7 +198,6 @@ nav ul a:hover {
 	font-family: 'Playfair Display';
     font-weight: normal;
     font-style: normal;
-}
 }
 
 /*HAND CRAFTED STYLES*/
@@ -436,10 +432,107 @@ h6 {
 	margin-top: 1rem;
 }
 
-@media only screen and (min-width: 320px){
-}
-@media only screen and (min-width: 480px){
-	body {
-		background-color: red;
+@media only screen and (min-width: 600px) {
+	
+	.navbar {
+		border-top: none;
 	}
+
+	nav ul {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+
+	header {
+		/*display: flex;*/
+	}
+
+	.banner {
+		order: 1;
+	}
+
+	.navbar {
+		order: 2;
+	}
+
+	.cartimg {
+		order: 3;
+	}
+
+	.newcollection {
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
+	background-repeat: no-repeat;
+	background-position: center, bottom center, center;
+	background-size: cover, 8.5625rem, cover;
+	padding: 7.125rem;
+	max-width: 100%;
+	display: flex;
+    justify-content: center;
+}
+
+	.newcollection h1, .newcollection h2 {
+	padding: 0;
+}
+
+	.newcollection h1 {
+		font-size: 1.25rem;
+	}
+
+    .newcollection h2 {	
+	font-size: 2.4375rem;
+	line-height: 3.25rem;
+}
+
+	.about {
+	    margin-top: 11%;
+}
+
+	.about p {
+		width: 97%;
+		font-size: 1.125rem;
+		line-height: 2.5rem;
+	}
+
+	h3 {
+    font-size: 2.5rem;
+    }
+
+	.flex-2 , .flex-3 , .flex-4 , .flex-5 {
+		flex: 0 25%;
+	}
+
+    .flex-1, .flex-6 {
+    	flex: 0 0 50%;
+    }
+
+    .flex-6 {
+    	margin-top: 0;
+    }
+
+    .flex-1, .flex-2, .flex-3 {
+    	margin-bottom: 0;
+    }
+
+    .flex-1 a {
+    	border-right: 5px solid white;
+    	border-bottom: 2.5px solid white;
+    }
+
+    .flex-2 a {
+    	border-right: 5px solid white;
+	}
+
+    .flex-2 a, .flex-3 a {
+    	border-bottom: 2.5px solid white;
+    }
+
+    .flex-4 a, .flex-5 a {
+    	border-top: 2.5px solid white;
+    	border-right: 5px solid white;
+    }
+
+    .flex-6 a {
+    	border-top: 2.5px solid white;
+    }
 }
