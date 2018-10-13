@@ -7,9 +7,10 @@
 
 
 	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet" href="./css/normalize.css">
+	<!-- <link rel="stylesheet" href="./css/normalize.css"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Raleway|Playfair+Display" rel="stylesheet"> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 
 	
@@ -23,7 +24,7 @@
 	<a class="logo" href="index.html"><img src="images/aloha-logo.svg" alt="aloha-logo"></img></a>
 	</div>
 
-
+<div class="navbar">
 <nav>
 	<ul>
 		<li><a href="#about">About</a></li>
@@ -32,7 +33,7 @@
 		<li><a href="">Updates</a></li>
 	</ul>
 </nav>
-
+</div>
 	<div class="cartimg">
 	<a  class="cart" href=""><img src="images/cart-icon.svg" alt="cart-icon"></img></a>
 	</div>
@@ -84,11 +85,17 @@
 
 
 
-	<a href=""><h3>Most-loved <span>Products</span></h3>
-	<img class="carousel" src="images/pink-dotted-dress.jpg" alt="dress">
+<!-- 	<a href=""><h3>Most-loved <span>Products</span></h3>
+	
 	<h4>Dresses</h4>
 	<h5>Checked Stretch Dress</h5>
-	<h4>$129.00</h4></a>
+	<h4>$129.00</h4></a> -->
+
+	<div class="carousel">
+  <div><img class="carousel" src="images/pink-dotted-dress.jpg" alt="dress"></div>
+  <div>your content</div>
+  <div>your content</div>
+</div>
 
 <div class="emailsection">
 		<h3>Sign-up for <strong>Products</strong></h3>
@@ -99,7 +106,7 @@
 		<div class="email-area">
 		<form action="mailto:someone@example.com" method="post" enctype="text/plain">
 
-		<input class="emailbox" type="Email" value="Your Email" name="Email"><input class="submitbutton" type="Submit" value="Subscribe" name="Submit">
+		<input type="textbox" value="Your Name" onfocus="if (this.value=='Your Name') this.value='';"/><input class="submitbutton" type="Submit" value="Subscribe" name="Submit">
 
 		
 
@@ -112,27 +119,39 @@
 
 <footer>
 	
-	<div class="copyright">
+	<div class="vancouver">
 			<h3><i class="far fa-copyright"> 2019 Aloha Apparel Co.</h3></i>
 			<h3>Powered by HTML and CSS.</h3>
 			<h3>604-604-6040. <a href="mailto:someone@yoursite.com">info@alohaapparel.com</a></h3>
 
-			<div class="vancouver">
+			
 			<h6>1490 W Broadway</h6>
 			<h6>Vancouver, BC, Canada</h6>
-			
+	</div>
+<div class="cta-buttons">			
 <ul>
-<li><a href=""><i class="fab fa-facebook-f"></i></a></li>	
+<li><a class=".fa-facebookl-f" href=""><i class="fab fa-facebook-f"></i></a></li>	
 <li><a href=""><i class="fab fa-twitter"></i></a></li>
 <li><a href=""><i class="fab fa-instagram"></a></i></li>
 <li><a href=""><i class="fab fa-pinterest"></i></a></li>
 <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>	
 </ul>
-</div>
-	</div>
 
+</div>
 
 </footer>
 <script src="js/script.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  $('.your-class').slick({
+    setting-name: setting-value
+  });
+});
+</script>
+
 </body>
 </html>

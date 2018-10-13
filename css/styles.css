@@ -123,9 +123,8 @@ body {
 	order: 1;
 }
 
-nav {
+.navbar {
 	order: 2;
-	padding-top: 40px;
 }
 
 .cartimg {
@@ -135,6 +134,7 @@ nav {
 .topsection {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-end;
 }
 
 .banner img {
@@ -181,10 +181,10 @@ nav ul a:hover {
 	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
 	background-repeat: no-repeat;
 	background-position: center, bottom center, center;
-	background-size: cover, 37%, cover;
-	padding: 7.125rem;
+	background-size: cover, 115px, cover;
+	padding: 7.125rem 0;
 	max-width: 100%;
-	display: flex;
+	display: block;
     justify-content: center;
 }
 
@@ -237,6 +237,7 @@ h3 {
 	line-height: 1.875rem;
 	margin: 0 auto;
 	padding-bottom: 15%;
+	width: 90%;
 }
 
 .about h3 {
@@ -353,7 +354,7 @@ h3 {
 	margin: 0 auto;
 	margin-bottom: 62px;
     font-size: 13px;
-    width: 88%;
+    width: 90%;
 }
 
 .emailsection h3, .emailsection p {
@@ -385,6 +386,7 @@ input {
 	appearance:         value;
 	border: none;
 	border-radius: 50px;
+	color: grey;
 }
 
 .submitbutton {
@@ -399,15 +401,15 @@ input {
 
 /*FOOTER*/
 
-.copyright h3 {
+footer h3 {
 	margin: 0 auto;
 }
 
-.copyright h3:nth-child(2) {
+footer h3:nth-child(2) {
 	margin-top: 10px;
 }
 
-.copyright h3, .copyright a {
+footer h3, footer a {
 	font-size: 0.6875rem;
 	color: white;
 	font-family: 'Playfair Display';
@@ -415,17 +417,18 @@ input {
     font-style: normal;
 }
 
-.copyright {
-	text-align: center;	
-	padding: 3.4375rem;
-}
-
-.copyright a {
-	text-decoration: underline;
-}
-
 footer {
+	padding: 3.4375rem;
 	background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 1%;
+}
+
+footer a {
+	text-decoration: underline;
 }
 
 i {
@@ -433,7 +436,7 @@ i {
 	font-size: 0.6875rem;
 }
 
-.copyright h6, .copyright a {
+footer h6, footer a {
 	margin-top: 1%;
 	margin-bottom: 0;
 	color: white;
@@ -452,21 +455,19 @@ h6 {
 	padding-top: 1rem;
 }
 
-.copyright li {
+footer li {
 	display: inline-block;
 	padding: 0 5px;
 }
 
-.copyright ul {
+footer ul {
 	padding: 0;
 	margin-top: 1rem;
 }
 
-@media only screen and (min-width: 360px) {
 
-	.newcollection {
-		background-size: cover, 30%, cover;
-	}
+
+@media only screen and (min-width: 360px) {
 
 	.submitbutton {
 		padding: 8px 30px;
@@ -481,11 +482,15 @@ h6 {
  		background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
  	    background-repeat: no-repeat;
  	    background-position: center, bottom center, center;
- 	    background-size: cover, 24%, cover;
- 	    padding: 7.125rem;
+ 	    background-size: cover, 105px, cover;
+ 	    padding: 7.125rem 0;
  	    max-width: 100%;
- 	    display: flex;
+ 	    display: block;
  	    justify-content: center;
+ 	}
+
+ 	.about p {
+		width: 78%;
  	}
 
 	form {
@@ -502,7 +507,7 @@ h6 {
 	.submitbutton {
 		background-color: #e2574c;
 		border-radius: 50px;
-		padding: 8px 60px;
+		padding: 8px 40px;
 		font-family: 'Raleway';
 	    font-weight: 500;
 	    font-style: normal;
@@ -519,15 +524,12 @@ h6 {
 		font-size: 16px;
 	}
 
-	nav ul {
-		display: flex;
-		justify-content: center;
-		margin: 0;
+	.topsection {
+		align-items: center;
 	}
 
-	header {
-		display: flex;
-		justify-content: space-between;
+	nav li {
+		padding: 0px 25px;
 	}
 
 	.cartimg {
@@ -538,10 +540,10 @@ h6 {
 	    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
 		background-repeat: no-repeat;
 		background-position: center, bottom center, center;
-		background-size: cover, 8.5625rem, cover;
-		padding: 7.125rem;
+		background-size: cover, 185px, cover;
+		padding: 175px 0;
 		max-width: 100%;
-		display: flex;
+		display: block;
     	justify-content: center;
 	}
 
@@ -619,16 +621,53 @@ h6 {
 	.emailsection p {
 		width: 68%;
 	}
-}
 
-@media only screen and (min-width: 992px) {
 	.about p {
     	width: 75%;
     }
+
+    footer {
+		display: flex;
+    	justify-content: space-between;
+    	flex-direction: row;
+	}
+	footer li {
+		display: block;
+	}
+
+	footer ul {
+		display: flex;
+    	flex-direction: column;
+	}
+
+		.cta-buttons i:after {
+		margin: 0 5px;
+	}
+
+	.fa-facebook-f:after {
+		content: "Facebook";
+	}
+
+	.fa-twitter:after {
+		content: "Twitter"
+	}
+
+	.fa-instagram:after {
+		content: "Instagram";
+	}
+
+	.fa-pinterest:after {
+		content: "Pinterest";
+	}
+
+	.fa-google-plus-g:after {
+		content: "Google Plus";
+	}
 }
 
 @media only screen and (min-width: 1240px) {
-	
+
+
 	.emailsection p {
 		width: 36%;
 	}
@@ -636,4 +675,9 @@ h6 {
 	.about p {
 		width: 56%;
 	}
+
+
+
+	
+
 }
