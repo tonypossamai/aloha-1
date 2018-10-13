@@ -97,7 +97,7 @@
 /*GENERAL STYLES*/
 
 html {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 a {
@@ -118,6 +118,19 @@ body {
 }
 
 /*HEADER*/
+
+.banner {
+	order: 1;
+}
+
+nav {
+	order: 2;
+	padding-top: 40px;
+}
+
+.cartimg {
+	order: 3;
+}
 
 .topsection {
 	display: flex;
@@ -161,10 +174,6 @@ nav ul a:hover {
 	color: #b64036;
 }
 
-.navbar {
-	border-top: 0.0625rem solid #d9d9d7;
-	
-}
 
 /*main content*/
 
@@ -203,7 +212,7 @@ nav ul a:hover {
 /*HAND CRAFTED STYLES*/
 
 .about {
-	margin-top: 15%;
+	margin-top: 12%;
 }
 
 span {
@@ -331,40 +340,61 @@ h3 {
 .emailsection {
 	background-image: url(../images/wave-bkgd.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+	background-position: bottom;
 	padding-bottom: 3rem;
 }
 
 .emailsection p {
-	font-size: 1rem;
+	font-size: 1.1875rem;
 	font-family: 'Raleway';
     font-weight: 500;
     font-style: normal;
 	line-height: 1.875rem;
 	margin: 0 auto;
-	padding-bottom: 15%;
+	margin-bottom: 62px;
+    font-size: 13px;
+    width: 88%;
 }
 
 .emailsection h3, .emailsection p {
 	color: white;
 }
 
-/*form, input, button {
-	padding: 14px 40px;
-	font-size: 2.0714285714285716rem;
-	border-radius: 4rem;
+.email-container {
+	display: flex;
+	justify-content: center;
 }
-*/
+
+.email-area {
+	background-color: white;
+	border-radius: 50px;
+}
+
+form {
+	background-color: white;
+    padding: 2px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
 
 
 input {
-	
+	padding: 8px;
+	-webkit-appearance: value;
+	-moz-appearance:    value;
+	appearance:         value;
+	border: none;
+	border-radius: 50px;
 }
 
-button {
-	
+.submitbutton {
 	background-color: #e2574c;
+	border-radius: 50px;
+	padding: 8px 10px;
+	font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+    color: white;
 }
 
 /*FOOTER*/
@@ -373,7 +403,7 @@ button {
 	margin: 0 auto;
 }
 
-.copyright h3:nth-child(2)) {
+.copyright h3:nth-child(2) {
 	margin-top: 10px;
 }
 
@@ -432,10 +462,61 @@ h6 {
 	margin-top: 1rem;
 }
 
+@media only screen and (min-width: 360px) {
+
+	.newcollection {
+		background-size: cover, 30%, cover;
+	}
+
+	.submitbutton {
+		padding: 8px 30px;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+ 	
+ 	.newcollection {
+ 		background-image: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+ 		background-image: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+ 		background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+ 	    background-repeat: no-repeat;
+ 	    background-position: center, bottom center, center;
+ 	    background-size: cover, 24%, cover;
+ 	    padding: 7.125rem;
+ 	    max-width: 100%;
+ 	    display: flex;
+ 	    justify-content: center;
+ 	}
+
+	form {
+		background-color: white;
+    	padding: 2px;
+    	border-radius: 50px;
+    	border: 1px solid white;
+	}
+
+	input {
+		padding: 8px;
+	}
+	
+	.submitbutton {
+		background-color: #e2574c;
+		border-radius: 50px;
+		padding: 8px 60px;
+		font-family: 'Raleway';
+	    font-weight: 500;
+	    font-style: normal;
+	}
+
+	.emailsection p {
+		width: 80%;
+	}
+}
+
 @media only screen and (min-width: 600px) {
 	
-	.navbar {
-		border-top: none;
+	html {
+		font-size: 16px;
 	}
 
 	nav ul {
@@ -445,15 +526,8 @@ h6 {
 	}
 
 	header {
-		/*display: flex;*/
-	}
-
-	.banner {
-		order: 1;
-	}
-
-	.navbar {
-		order: 2;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.cartimg {
@@ -461,32 +535,32 @@ h6 {
 	}
 
 	.newcollection {
-	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
-	background-repeat: no-repeat;
-	background-position: center, bottom center, center;
-	background-size: cover, 8.5625rem, cover;
-	padding: 7.125rem;
-	max-width: 100%;
-	display: flex;
-    justify-content: center;
-}
+	    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
+		background-repeat: no-repeat;
+		background-position: center, bottom center, center;
+		background-size: cover, 8.5625rem, cover;
+		padding: 7.125rem;
+		max-width: 100%;
+		display: flex;
+    	justify-content: center;
+	}
 
 	.newcollection h1, .newcollection h2 {
-	padding: 0;
-}
+		padding: 0;
+	}
 
 	.newcollection h1 {
 		font-size: 1.25rem;
 	}
 
     .newcollection h2 {	
-	font-size: 2.4375rem;
-	line-height: 3.25rem;
-}
+		font-size: 2.4375rem;
+		line-height: 3.25rem;
+	}
 
 	.about {
 	    margin-top: 11%;
-}
+	}
 
 	.about p {
 		width: 97%;
@@ -495,7 +569,7 @@ h6 {
 	}
 
 	h3 {
-    font-size: 2.5rem;
+    	font-size: 2.5rem;
     }
 
 	.flex-2 , .flex-3 , .flex-4 , .flex-5 {
@@ -535,4 +609,31 @@ h6 {
     .flex-6 a {
     	border-top: 2.5px solid white;
     }
+
+    .email-area {
+		background-color: white;
+		padding: 0;
+		border-radius: 50px;
+	}
+
+	.emailsection p {
+		width: 68%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.about p {
+    	width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+	
+	.emailsection p {
+		width: 36%;
+	}
+
+	.about p {
+		width: 56%;
+	}
 }
