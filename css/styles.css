@@ -124,17 +124,19 @@ body {
 }
 
 .navbar {
-	order: 2;
+	order: 3;
+	flex: 0 0 100%;
 }
 
 .cartimg {
-	order: 3;
+	order: 2;
 }
 
 .topsection {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	flex-wrap: wrap;
 }
 
 .banner img {
@@ -168,6 +170,7 @@ nav ul {
 	justify-content: space-around;
 	padding-left: 0;
 	margin: 0.3125rem 0.9375rem;
+	border-top: 1px solid #d7d7d7;
 }
 
 nav ul a:hover {
@@ -528,12 +531,21 @@ footer ul {
 		align-items: center;
 	}
 
+	nav ul {
+		border-top: initial;
+	}
+	
 	nav li {
 		padding: 0px 25px;
 	}
 
 	.cartimg {
 		order: 3;
+	}
+
+	.navbar {
+		order: 2;
+		flex: initial;
 	}
 
 	.newcollection {
@@ -667,6 +679,21 @@ footer ul {
 
 @media only screen and (min-width: 1240px) {
 
+	.header {
+		position: fixed;
+	}
+
+	.banner img {
+		width: 10.625rem;
+	}
+
+	.cartimg img {
+		width: 3.75rem
+	}
+	
+	nav ul a {
+		font-size: 0.9375rem;
+	}
 
 	.emailsection p {
 		width: 36%;
