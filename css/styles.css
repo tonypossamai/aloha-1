@@ -183,9 +183,9 @@ nav ul a:hover {
 .newcollection {
 	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
 	background-repeat: no-repeat;
-	background-position-y: center, 53px, center; 
+	background-position-y: center, 45px, center; 
 	background-position-x: center, center, center;
-	background-size: cover, 7.5rem, cover;
+	background-size: cover, 9rem, cover;
 	padding: 7.125rem 0;
 	max-width: 100%;
 	display: block;
@@ -207,7 +207,6 @@ nav ul a:hover {
 }
 
 .newcollection h2 {	
-	line-height: 1.25rem;
 	font-size: 1.75rem;
 	font-family: 'Playfair Display';
     font-weight: normal;
@@ -433,6 +432,7 @@ input {
 
 footer h3 {
 	margin: 0 auto;
+	font-size: 12px;
 }
 
 footer h3, footer a {
@@ -477,8 +477,18 @@ h6 {
     font-size: 0.75rem;
 }
 
-.vancouver {
-	padding-top: 1rem;
+.vancouver h3:last-of-type {
+	padding-top: 10px;
+	font-size: 12px;
+}
+
+.vancouver h6:first-of-type {
+	padding-top: 10px;
+}
+
+.vancouver h6 {
+	color: grey;
+	font-size: 12px;
 }
 
 footer li {
@@ -489,6 +499,10 @@ footer li {
 footer ul {
 	padding: 0;
 	margin-top: 1rem;
+}
+
+ul h5 {
+	display: none;
 }
 
 
@@ -672,11 +686,18 @@ footer ul {
     	width: 75%;
     }
 
+	.vancouver {
+		display: flex;
+    	flex-direction: column;
+    	align-items: flex-start;
+	}
+
     footer {
 		display: flex;
     	justify-content: space-between;
     	flex-direction: row;
 	}
+
 	footer li {
 		display: block;
 	}
@@ -686,9 +707,25 @@ footer ul {
     	flex-direction: column;
 	}
 
+	footer ul i {
+		margin: 6px 2px;
+	}
 
+	footer h3 {
+		margin: initial;
+	}
 
-	.fa-facebook-f:after {
+	ul h5 {
+		display: inline-block;
+    	vertical-align: middle;
+    	margin: 5px;
+    	font-family: 'Raleway';
+    	font-weight: 500;
+    	font-style: normal;
+    	font-size: 12px;
+	}
+
+/*	.fa-facebook-f:after {
 		content: " Facebook";
 	}
 
@@ -706,7 +743,7 @@ footer ul {
 
 	.fa-google-plus-g:after {
 		content: "Google Plus";
-	}
+	}*/
 }
 
 @media only screen and (min-width: 1240px) {
