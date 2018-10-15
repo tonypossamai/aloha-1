@@ -513,6 +513,13 @@ footer ul {
 		width: 78%;
  	}
 
+ 	.carousel-cell {
+ 		    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ 	}
+
 	form {
 		background-color: white;
     	padding: 2px;
@@ -645,6 +652,28 @@ footer ul {
     	padding: 9vw 0;
     }
 
+	.carousel-cell {
+		width: 50%;
+	}
+    /*.carousel-cell {*/
+/*  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+*/
+/* cell number */
+/*.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+*/
     .email-area {
 		background-color: white;
 		padding: 0;
@@ -673,9 +702,7 @@ footer ul {
     	flex-direction: column;
 	}
 
-		.cta-buttons i:after {
-		margin: 0 5px;
-	}
+
 
 	.fa-facebook-f:after {
 		content: "Facebook";
@@ -728,8 +755,37 @@ footer ul {
 		width: 56%;
 	}
 
+	.carousel-cell {
+    	width: 24%;
+    	height: 470px;
+    	margin-right: 10px;
+    	border-radius: 5px;
+    	counter-increment: carousel-cell;
+	}
 
+	#featured h3 {
+	margin: 85px 0;
+}
 
-	
+/* cell number */
+	.carousel-cell:before {
+  		/*display: block;*/
+  		/*text-align: center;*/
+  		/*content: counter(carousel-cell);*/
+  		line-height: 200px;
+  		font-size: 80px;
+  		color: white;
+	}
 
+	.flickity-enabled.is-draggable .flickity-viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+	height: 485px;
+    touch-action: pan-y;
+}
+
+}
+
+@media only screen and (min-width: 1920px) {
 }
