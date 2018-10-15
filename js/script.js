@@ -3,3 +3,5 @@ $('.main-carousel').flickity({
   cellAlign: 'left',
   contain: true
 });
+
+alert("Hello world");

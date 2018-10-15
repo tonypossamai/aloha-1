@@ -183,12 +183,14 @@ nav ul a:hover {
 .newcollection {
 	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
 	background-repeat: no-repeat;
-	background-position: center, bottom center, center;
+	background-position-y: center, 53px, center; 
+	background-position-x: center, center, center;
 	background-size: cover, 7.5rem, cover;
 	padding: 7.125rem 0;
 	max-width: 100%;
 	display: block;
     justify-content: center;
+    text-shadow: 0 0 6px black;
 }
 
 .newcollection h1, .newcollection h2 {
@@ -367,7 +369,7 @@ h3 {
 }
 
 .emailsection {
-	background-image: url(../images/wave-bkgd.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../images/wave-bkgd.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	padding-bottom: 3rem;
@@ -380,13 +382,13 @@ h3 {
     font-style: normal;
 	line-height: 1.875rem;
 	margin: 0 auto;
-	margin-bottom: 4.42857142857rem;
+	margin-bottom: 1.42857142857rem;
     font-size: 0.92857142857rem;
-    width: 90%;
 }
 
 .emailsection h3, .emailsection p {
 	color: white;
+	text-shadow: 0 0 6px black;
 }
 
 .email-container {
@@ -495,19 +497,6 @@ footer ul {
 	.newcollection h2 {
 	    width: initial;
 	}
- 	
- 	.newcollection {
- 		background-image: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
- 		background-image: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
- 		background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
- 	    background-repeat: no-repeat;
- 	    background-position: center, bottom center, center;
- 	    background-size: cover, 105px, cover;
- 	    padding: 7.125rem 0;
- 	    max-width: 100%;
- 	    display: block;
- 	    justify-content: center;
- 	}
 
  	.about p {
 		width: 78%;
@@ -528,7 +517,7 @@ footer ul {
 	}
 
 	input {
-		padding: 8px;
+		padding: 8px 40px;
 	}
 	
 	.submitbutton {
@@ -573,14 +562,9 @@ footer ul {
 	}
 
 	.newcollection {
-	    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/banner-girl.png),  url(../images/flower-bkgd.jpg); 
-		background-repeat: no-repeat;
-		background-position: center, bottom center, center;
-		background-size: cover, 185px, cover;
-		padding: 175px 0;
-		max-width: 100%;
-		display: block;
-    	justify-content: center;
+
+		background-position-y: center, 46px, center;
+		background-size: cover, 149px, cover;
 	}
 
 	.newcollection h1, .newcollection h2 {
@@ -705,7 +689,7 @@ footer ul {
 
 
 	.fa-facebook-f:after {
-		content: "Facebook";
+		content: " Facebook";
 	}
 
 	.fa-twitter:after {
@@ -736,15 +720,32 @@ footer ul {
 	}
 
 	.cartimg img {
-		width: 3.75rem
+		width: 3.75rem;
+		margin-left: 40px;
 	}
 	
 	nav ul a {
 		font-size: 0.9375rem;
 	}
 
+	.newcollection {
+		padding: 10.125rem 0;
+		background-size: cover, 220px, contain;
+		background-repeat: no-repeat, no-repeat, repeat;
+
+	}
+
+	.emailsection {
+		padding-top: 1px;
+		background-size: cover;
+	}
+
+	.emailsection h3 {
+   	 	padding-top: 0px;
+	}
+
 	.emailsection p {
-		width: 36%;
+		width: 45%;
 	}
 
 	.flex-container a {
@@ -752,7 +753,8 @@ footer ul {
 	}
 
 	.about p {
-		width: 56%;
+		width: 52%;
+		padding-bottom: 11%;
 	}
 
 	.carousel-cell {
@@ -788,4 +790,9 @@ footer ul {
 }
 
 @media only screen and (min-width: 1920px) {
+	
+	.about p {
+
+    background-repeat: no-repeat, no-repeat, repeat;
+	}
 }
