@@ -4,13 +4,6 @@ $('.main-carousel').flickity({
   contain: true
 });
 
-// alert("@#%^&@%$&Injecting Virus#&%@^#%");
-
-// $('email-area').on('submit', 'form', function(){
-// 	event.preventDefault();
-// 	const $emailInput=$('your-email')}
-//  
-
 $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
@@ -19,4 +12,17 @@ $('a[href^="#"]').on('click', function(event) {
             scrollTop: target.offset().top
         }, 1000);
     }
+});
+
+$('.email-container').on('submit', 'form', function() {
+  event.preventDefault();
+  const $emailInput= $('.email-input');
+  console.log($emailInput.val());
+    console.log($emailInput.val().length);
+
+  if ($emailInput.val().length !== 0) {
+    alert('Thanks for subscribing!');
+  } else {
+    alert('Please enter a valid email');
+  }
 });
