@@ -15,3 +15,5 @@ What I've learned
 -------------------------------
 
 In this project I have learned to layout my content using Flex rather than using floats, create animations using jQuery, making responsive websites using media queries. I have followed the required criteria to the best of my ability.
+
+https://patrickmontoya.github.io/aloha/
