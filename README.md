@@ -11,6 +11,23 @@ In this project I have used flickity carousel to have a slider for my images.
 -Media Queries
 -Layouts using flexbox
 
+
+# Project Desctiption 
+-------------------------------
+
+
+# Screenshots
+-------------------------------
+
+
+
+
+# Tools and Languages Used
+-------------------------------
+
+
+
+
 What I've learned
 -------------------------------
 
